@@ -6,7 +6,7 @@ from django.conf.urls import url
 app_name='bankApi'
 
 urlpatterns=[
-path('',views.index,name='list'),
+path('',views.index,name='list1'),
 url(r'(?P<name>[\w|\W]+)/(?P<city>[\w|\W]+)/$',BankListApiView.as_view(),name='list'),
 url(r'(?P<ifsc>[\w|\W]+)/$',BankDetailAPIView.as_view(),name='detail'),
 ]
