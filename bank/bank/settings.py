@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 import django_heroku
-django_heroku.settings(locals())
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -120,7 +120,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+django_heroku.settings(locals())
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
